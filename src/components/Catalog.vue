@@ -1,14 +1,30 @@
 <template>
    <v-layout>
     <v-flex xs12 sm6 offset-sm3>
-      <v-carousel v-for="(item,i) in catalog" :key="i">
-      <v-carousel-item
-        v-for="(item2,j) in item.images"
-          :key="j"
-          :src="item2"
-        > {{i}}
-        </v-carousel-item>
-        </v-carousel>
+      <v-card v-for="(item,i) in catalog" :key="i">
+        
+         <v-carousel dark="false" background="#0000000">
+            <v-carousel-item
+              v-for="(item2,j) in item.images"
+                :key="j"
+                :src="item2"
+              >
+              <h2 v-if="i == 0">jjjjjjjjj</h2>
+              </v-carousel-item>
+              </v-carousel>
+              <div>
+                <v-btn outline color="indigo">AGREGAR
+                  <v-icon right dark>local_grocery_store</v-icon>
+                </v-btn>
+              </div>
+               <div>
+                <h1>{{item.saleprice}}</h1>
+              </div>
+             
+              <br/>
+      </v-card>
+      
+     
         
     </v-flex>
   </v-layout>
