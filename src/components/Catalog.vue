@@ -3,7 +3,7 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card v-for="(item,i) in catalog" :key="i">
         
-         <v-carousel background="#0000000">
+         <v-carousel>
             <v-carousel-item
               v-for="(item2,j) in item.images"
                 :key="j"
@@ -18,7 +18,7 @@
                 </v-btn>
               </div>
                <div>
-                <h1>{{item.saleprice}}</h1>
+                <h1>${{item.saleprice}}</h1>
               </div>
               </div>
              
