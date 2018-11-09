@@ -3,15 +3,15 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card v-for="(item,i) in catalog" :key="i">
         
-         <v-carousel dark="false" background="#0000000">
+         <v-carousel background="#0000000">
             <v-carousel-item
               v-for="(item2,j) in item.images"
                 :key="j"
                 :src="item2"
               >
-              <h2 v-if="i == 0">jjjjjjjjj</h2>
               </v-carousel-item>
               </v-carousel>
+              <div layout="row" layout-align="center center">
               <div>
                 <v-btn outline color="indigo">AGREGAR
                   <v-icon right dark>local_grocery_store</v-icon>
@@ -19,6 +19,7 @@
               </div>
                <div>
                 <h1>{{item.saleprice}}</h1>
+              </div>
               </div>
              
               <br/>
@@ -67,9 +68,13 @@
           console.log(this.catalog);
           
         })
+      },
+      update: function(evento){
+            this.catalog = evento;
       }
     },
     mounted(){
+
        this.getjeans();
     }
     /*data () {

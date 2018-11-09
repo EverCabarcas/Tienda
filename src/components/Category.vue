@@ -147,8 +147,8 @@ import Catalogo from './Catalog';
         .then(response => response.json())
         .then((data) => {
           this.catalogItems = data.catalogItems;
-          console.log(this.catalogItems);
-          //this.$emit('catalogoItems',data.catalogItems);
+          //console.log(this.catalogItems);
+          this.$emit('catalogoItems',this.catalogItems);
         })
       }
     }
