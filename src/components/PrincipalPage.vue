@@ -78,7 +78,6 @@
 
 <script>
 import Category from './Category';
-import Hello from './HelloWorld';
 import Catalog from './Catalog';
 import Vue from 'vue';
 
@@ -95,7 +94,6 @@ import Vue from 'vue';
     },
     components:{
          'category':Category,
-         'hello': Hello,
          'catalog': Catalog
 
     },
@@ -121,21 +119,3 @@ import Vue from 'vue';
   
   
 </script>
-
-<!--
-<script>
-import HelloWorld from './components/HelloWorld'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  data () {
-    return {
-      //
-    }
-  }
-}
-</script>
--->

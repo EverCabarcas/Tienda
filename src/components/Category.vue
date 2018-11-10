@@ -109,8 +109,7 @@ import Catalogo from './Catalog';
   export default {
     name: 'Category',
     data: () => ({
-     catalogItems: null,
-     flag: 0
+     catalogItems: null
     }),
     components:{
       'catalog':Catalogo

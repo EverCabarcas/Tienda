@@ -29,17 +29,6 @@
         
     </v-flex>
   </v-layout>
-   <!--<ul>
-    <li  v-for="(item,i) in catalog"
-      :key="i">{{item.name}}
-      <ul>
-        <li  v-for="(item2,i) in item.images"
-      :key="i">
-            {{item2}}
-        </li>
-        </ul>  
-    </li>
-</ul>-->
 </template>
 
 <script>
@@ -77,24 +66,6 @@
 
        this.getjeans();
     }
-    /*data () {
-      return {
-        items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-          }
-        ]
-      }
-    }*/
     
   }
 </script>
